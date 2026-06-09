@@ -1,5 +1,4 @@
 import React from "react";
-import image from "../Images/news.png";
 import { useContext } from "react";
 import { apiContext } from "../context/context";
 
@@ -13,7 +12,7 @@ const Cards = () => {
           <div key={data.title}>
             <div className="w-92 h-120 bg-black text-white rounded-2xl">
               {data.urlToImage === null ? (
-                <img src={image} className="rounded-t-2xl" alt="..." />
+                <img src="https://ik.imagekit.io/priyanshu61103/news.png" className="rounded-t-2xl" alt="..." />
               ) : (
                 <img
                   src={data.urlToImage}
